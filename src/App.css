@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.error{
+  color:red;
+  margin:0;
+}
+
+.invisible{
+  visibility: hidden;
+}
