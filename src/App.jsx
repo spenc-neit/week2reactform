@@ -11,17 +11,17 @@ function App() {
 		setShowForm(true);
 	};
 
-	const handleHide = () => {
-		setShowForm(false);
+	const toggleForm = () => {
+		setShowForm(!showForm);
 	};
 
-	const form = showForm ? <Form /> : null;
+	const form = showForm ? <Form handleToggleForm={toggleForm} /> : null;
 	console.log(form)
 
 	return (
 		<>
-		<button className="btn" onClick={showForm ? handleHide : handleShow}>
-			Toggle Form Visibility
+		<button className="btn" onClick={handleShow}>
+			Show Form
 		</button>
 		{form}
 		</>
